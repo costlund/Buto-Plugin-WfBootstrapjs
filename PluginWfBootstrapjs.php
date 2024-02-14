@@ -15,6 +15,10 @@ class PluginWfBootstrapjs{
      */
     $element[] = wfDocument::createHtmlElement('style', "@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none){ .modal-content{overflow:auto} }");
     /**
+     * alert override
+     */
+    $element[] = wfDocument::createHtmlElement('script', 'function alert(message) { PluginWfBootstrapjs.alert(message);}');
+    /**
      * 
      */
     wfDocument::renderElement($element);

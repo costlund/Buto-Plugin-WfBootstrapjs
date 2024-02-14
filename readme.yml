@@ -22,6 +22,7 @@ readme:
               plugin: wf/bootstrapjs
               method: include
             ```
+            Javascript alert method is replaced by PluginWfBootstrapjs.alert.
     -
       name: Methods
       item:
@@ -103,6 +104,7 @@ readme:
             ```
             PluginWfBootstrapjs.alert('My alert text...');
             ```
+            Original javascript alert method is replaced by this method on page load using widget_include.
         -
           name: Confirm
           description: |

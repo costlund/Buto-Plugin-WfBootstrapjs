@@ -26,6 +26,7 @@
 data:
   plugin: wf/bootstrapjs
   method: include</code></pre>
+<p>Javascript alert method is replaced by PluginWfBootstrapjs.alert.</p>
 
 <a name="key_1"></a>
 
@@ -91,6 +92,7 @@ Hide all modals.</p>
 ### Alert
 
 <pre><code>PluginWfBootstrapjs.alert('My alert text...');</code></pre>
+<p>Original javascript alert method is replaced by this method on page load using widget_include.</p>
 
 <a name="key_2_2"></a>
 

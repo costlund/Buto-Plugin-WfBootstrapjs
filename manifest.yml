@@ -1,5 +1,9 @@
-version: 1.16.1
+version: 1.17.0
 history:
+  1.17.0:
+    date: '2024-02-14'
+    title: Alert
+    description: 'Override alert method with PluginWfBootstrapjs.alert.'
   1.16.1:
     date: '2024-01-24'
     title: Readme
