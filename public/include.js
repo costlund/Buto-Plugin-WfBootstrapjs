@@ -345,7 +345,7 @@ function plugin_wf_bootstrapjs(){
     return null;
   }
   this.alert = function(content){
-    this.modal({content: content, label: '', backdrop: false});
+    this.modal({content: content, label: '', backdrop: false, body_bg: 'light'});
   }
   this.i18n = {};
   this.confirm_data = {};

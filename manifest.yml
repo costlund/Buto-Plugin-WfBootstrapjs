@@ -1,5 +1,9 @@
-version: 1.17.0
+version: 1.18.0
 history:
+  1.18.0:
+    date: '2024-03-04'
+    title: Alert
+    description: 'Add body bg light to Alert.'
   1.17.0:
     date: '2024-02-14'
     title: Alert
