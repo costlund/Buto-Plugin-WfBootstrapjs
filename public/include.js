@@ -238,6 +238,9 @@ function plugin_wf_bootstrapjs(){
     /**
      * Close modal if exist.
      */
+    if(typeof $('#'+data.id).modal == 'undefined'){
+      console.log('PluginWfBootstrapjs says modal method undefined when trying to handle id '+data.id+'!');
+    }
     $('#'+data.id).modal('hide');
     //Create modal.
     this.createModal(data);
