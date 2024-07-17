@@ -38,66 +38,93 @@ readme:
           description: |
             Open modal.
             ```
-            PluginWfBootstrapjs.modal({});
+            PluginWfBootstrapjs.modal({id: 'my_modal', label: 'My modal', url: '/some/url'});
             ```
-            id.
-            ```
-            id: 'my_modal'
-            ```
-            Label.
-            ```
-            label: 'My modal'
-            ```
-            Size
-            Size (sm, lg, xl).
-            ```
-            size: 'sm'
-            ```
-            Url.
-            Url (add content to body).
-            ```
-            url: '/_some_/_url_'
-            ```
-            Reload.
-            Reload button.
-            ```
-            btn_reload: true
-            ```
-            Content.
-            Text.
-            Content form text.
-            ```
-            content: 'Some content...'
-            ```
-            Body.
-            Add content to body element.
-            ```
-            document.getElementById('my_modal_body').innerHTML='Add some content!';
-            ```
-            Dom.
-            Add content to body using PluginWfDom.
-            ```
-            PluginWfDom.render([{type: 'div', innerHTML: [{type: 'strong', innerHTML: 'Date'}, {type: 'div', innerHTML: '2001-01-01'}]}], 'my_modal_body');
-            ```
-            Backdrop.
-            Set backdrop to false (default true) to be able to close modal when click besides.
-            ```
-            backdrop: true
-            ```
-            Body background.
-            Set body background using Bootstrap bg-(name) (optional).
-            ```
-            body_bg: 'light'
-            ```
-            Jquery.
-            Hide all modals.
-            ```
-            $('.modal').modal('hide');
-            ```
-            Hide by id.
-            ```
-            $('#element_id').modal('hide');
-            ```
+          item:
+            -
+              name: id
+              description: |
+                ```
+                id: 'my_modal'
+                ```
+            -
+              name: label
+              description: |
+                ```
+                label: 'My modal'
+                ```
+            -
+              name: url
+              description: |
+                ```
+                url: '/some/url'
+                ```
+            -
+              name: size
+              description: |
+                Values sm, lg, xl.
+                ```
+                size: 'sm'
+                ```
+            -
+              name: fade
+              description: |
+                Set to false to avoid animation.
+                Could be used if script in modal is supposed to close the modal.
+                ```
+                fade: false
+                ```
+            -
+              name: btn_reload
+              description: |
+                ```
+                btn_reload: true
+                ```
+            -
+              name: content
+              description: |
+                ```
+                content: 'Some content...'
+                ```
+            -
+              name: Body
+              description: |
+                Add content to body element.
+                ```
+                document.getElementById('my_modal_body').innerHTML='Add some content!';
+                ```
+            -
+              name: Dom
+              description: |
+                Add content to body using PluginWfDom.
+                ```
+                PluginWfDom.render([{type: 'div', innerHTML: [{type: 'strong', innerHTML: 'Date'}, {type: 'div', innerHTML: '2001-01-01'}]}], 'my_modal_body');
+                ```
+            -
+              name: backdrop
+              description: |
+                Set backdrop to false (default true) to be able to close modal when click besides.
+                ```
+                backdrop: true
+                ```
+            -
+              name: body_bg
+              description: |
+                Set body background using Bootstrap bg-(name) (optional).
+                ```
+                body_bg: 'light'
+                ```
+            -
+              name: Jquery
+              description: |
+                Hide all modals.
+                ```
+                $('.modal').modal('hide');
+                ```
+                Hide one.
+                ```
+                $('#element_id').modal('hide');
+                ```
         -
           name: Alert
           description: |

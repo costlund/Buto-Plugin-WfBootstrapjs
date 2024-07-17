@@ -51,40 +51,88 @@ data:
 ### Modal
 
 <p>Open modal.</p>
-<pre><code>PluginWfBootstrapjs.modal({});</code></pre>
-<p>id.</p>
+<pre><code>PluginWfBootstrapjs.modal({id: 'my_modal', label: 'My modal', url: '/some/url'});</code></pre>
+
+<a name="key_2_0_0"></a>
+
+#### id
+
 <pre><code>id: 'my_modal'</code></pre>
-<p>Label.</p>
+
+<a name="key_2_0_1"></a>
+
+#### label
+
 <pre><code>label: 'My modal'</code></pre>
-<p>Size
-Size (sm, lg, xl).</p>
+
+<a name="key_2_0_2"></a>
+
+#### url
+
+<pre><code>url: '/some/url'</code></pre>
+
+<a name="key_2_0_3"></a>
+
+#### size
+
+<p>Values sm, lg, xl.</p>
 <pre><code>size: 'sm'</code></pre>
-<p>Url.
-Url (add content to body).</p>
-<pre><code>url: '/_some_/_url_'</code></pre>
-<p>Reload.
-Reload button.</p>
+
+<a name="key_2_0_4"></a>
+
+#### fade
+
+<p>Set to false to avoid animation.
+Could be used if script in modal is supposed to close the modal.</p>
+<pre><code>fade: false</code></pre>
+
+<a name="key_2_0_5"></a>
+
+#### btn_reload
+
 <pre><code>btn_reload: true</code></pre>
-<p>Content.
-Text.
-Content form text.</p>
+
+<a name="key_2_0_6"></a>
+
+#### content
+
 <pre><code>content: 'Some content...'</code></pre>
-<p>Body.
-Add content to body element.</p>
+
+<a name="key_2_0_7"></a>
+
+#### Body
+
+<p>Add content to body element.</p>
 <pre><code>document.getElementById('my_modal_body').innerHTML='Add some content!';</code></pre>
-<p>Dom.
-Add content to body using PluginWfDom.</p>
+
+<a name="key_2_0_8"></a>
+
+#### Dom
+
+<p>Add content to body using PluginWfDom.</p>
 <pre><code>PluginWfDom.render([{type: 'div', innerHTML: [{type: 'strong', innerHTML: 'Date'}, {type: 'div', innerHTML: '2001-01-01'}]}], 'my_modal_body');</code></pre>
-<p>Backdrop.
-Set backdrop to false (default true) to be able to close modal when click besides.</p>
+
+<a name="key_2_0_9"></a>
+
+#### backdrop
+
+<p>Set backdrop to false (default true) to be able to close modal when click besides.</p>
 <pre><code>backdrop: true</code></pre>
-<p>Body background.
-Set body background using Bootstrap bg-(name) (optional).</p>
+
+<a name="key_2_0_10"></a>
+
+#### body_bg
+
+<p>Set body background using Bootstrap bg-(name) (optional).</p>
 <pre><code>body_bg: 'light'</code></pre>
-<p>Jquery.
-Hide all modals.</p>
+
+<a name="key_2_0_11"></a>
+
+#### Jquery
+
+<p>Hide all modals.</p>
 <pre><code>$('.modal').modal('hide');</code></pre>
-<p>Hide by id.</p>
+<p>Hide one.</p>
 <pre><code>$('#element_id').modal('hide');</code></pre>
 
 <a name="key_2_1"></a>
