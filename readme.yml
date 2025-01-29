@@ -23,6 +23,13 @@ readme:
               method: include
             ```
             Javascript alert method is replaced by PluginWfBootstrapjs.alert.
+        -
+          name: Backdrop
+          description: |
+            Backdrop can be set for all modals.
+            ```
+            PluginWfBootstrapjs.backdrop = false
+            ```
     -
       name: Methods
       item:

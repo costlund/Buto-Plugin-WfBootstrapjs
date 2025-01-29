@@ -28,6 +28,13 @@ data:
   method: include</code></pre>
 <p>Javascript alert method is replaced by PluginWfBootstrapjs.alert.</p>
 
+<a name="key_0_1"></a>
+
+### Backdrop
+
+<p>Backdrop can be set for all modals.</p>
+<pre><code>PluginWfBootstrapjs.backdrop = false</code></pre>
+
 <a name="key_1"></a>
 
 ## Methods
