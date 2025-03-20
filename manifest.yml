@@ -1,5 +1,9 @@
-version: 1.18.2
+version: 1.18.3
 history:
+  1.18.3:
+    date: '2025-03-20'
+    title: Backdrop
+    description: 'Set global parameter for backdrop to false.'
   1.18.2:
     date: '2025-01-29'
     title: Backdrop

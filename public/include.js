@@ -1,6 +1,6 @@
 function plugin_wf_bootstrapjs(){
   this.bootstrap_version = '3';
-  this.backdrop = true;
+  this.backdrop = false;
   this.createModal = function(data){
     if(document.getElementById('PluginTwitterBootstrap413v')){
       this.bootstrap_version = '4';
