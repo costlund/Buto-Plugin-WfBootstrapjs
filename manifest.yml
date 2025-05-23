@@ -1,5 +1,9 @@
-version: 1.18.3
+version: 1.18.4
 history:
+  1.18.4:
+    date: '2025-05-23'
+    title: Close button
+    description: 'Add param btn_close, default true. If false close button will be hidden.'
   1.18.3:
     date: '2025-03-20'
     title: Backdrop

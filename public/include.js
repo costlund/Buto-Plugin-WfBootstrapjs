@@ -40,6 +40,15 @@ function plugin_wf_bootstrapjs(){
         data.footer += "<button type=\"button\" class=\"btn btn-secondary\" data-bs-dismiss=\"modal\" id=\""+data.id+"_btn_close\">"+data.footer_btn_close_text+"</button>";
       }
     }
+    /**
+     * btn_close
+     */
+    if (typeof(data.btn_close) == "undefined"){
+      data.btn_close = true;
+    }
+    /**
+     * 
+     */
     var bootstrap_modal = null;
     if(this.bootstrap_version=='3'){
       bootstrap_modal = [
@@ -182,6 +191,12 @@ function plugin_wf_bootstrapjs(){
        */
       if(data.body_bg.length){
         bootstrap_modal[0].innerHTML[0].innerHTML[0].innerHTML[1].attribute.class=bootstrap_modal[0].innerHTML[0].innerHTML[0].innerHTML[1].attribute.class+' bg-'+data.body_bg;
+      }
+      /**
+       * btn_close
+       */
+      if(!data.btn_close){
+        bootstrap_modal[0].innerHTML[0].innerHTML[0].innerHTML[0].innerHTML[2].attribute.style='display:none';
       }
     }
     /**

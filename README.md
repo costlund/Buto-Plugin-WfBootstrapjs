@@ -101,39 +101,47 @@ Could be used if script in modal is supposed to close the modal.</p>
 
 <a name="key_2_0_6"></a>
 
+#### btn_close
+
+<p>Optional.</p>
+<pre><code>btn_close: true</code></pre>
+<p>Set to false to hide close button.</p>
+
+<a name="key_2_0_7"></a>
+
 #### content
 
 <pre><code>content: 'Some content...'</code></pre>
 
-<a name="key_2_0_7"></a>
+<a name="key_2_0_8"></a>
 
 #### Body
 
 <p>Add content to body element.</p>
 <pre><code>document.getElementById('my_modal_body').innerHTML='Add some content!';</code></pre>
 
-<a name="key_2_0_8"></a>
+<a name="key_2_0_9"></a>
 
 #### Dom
 
 <p>Add content to body using PluginWfDom.</p>
 <pre><code>PluginWfDom.render([{type: 'div', innerHTML: [{type: 'strong', innerHTML: 'Date'}, {type: 'div', innerHTML: '2001-01-01'}]}], 'my_modal_body');</code></pre>
 
-<a name="key_2_0_9"></a>
+<a name="key_2_0_10"></a>
 
 #### backdrop
 
 <p>Set backdrop to false (default true) to be able to close modal when click besides.</p>
 <pre><code>backdrop: true</code></pre>
 
-<a name="key_2_0_10"></a>
+<a name="key_2_0_11"></a>
 
 #### body_bg
 
 <p>Set body background using Bootstrap bg-(name) (optional).</p>
 <pre><code>body_bg: 'light'</code></pre>
 
-<a name="key_2_0_11"></a>
+<a name="key_2_0_12"></a>
 
 #### Jquery
 

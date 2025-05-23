@@ -88,6 +88,15 @@ readme:
                 btn_reload: true
                 ```
             -
+              name: btn_close
+              date: '2025-05-23'
+              description: |
+                Optional.
+                ```
+                btn_close: true
+                ```
+                Set to false to hide close button.
+            -
               name: content
               description: |
                 ```
