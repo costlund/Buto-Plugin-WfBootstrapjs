@@ -12,9 +12,13 @@
 
 
 
+
+
 <a name="key_0_0"></a>
 
 ### include
+
+
 
 <ul>
 <li>Include javascript.</li>
@@ -32,6 +36,8 @@ data:
 
 ### Backdrop
 
+
+
 <p>Backdrop can be set for all modals.</p>
 <pre><code>PluginWfBootstrapjs.backdrop = false</code></pre>
 
@@ -41,9 +47,13 @@ data:
 
 
 
+
+
 <a name="key_1_0"></a>
 
 ### get_i18n
+
+
 
 <p>Translations.</p>
 
@@ -53,9 +63,13 @@ data:
 
 
 
+
+
 <a name="key_2_0"></a>
 
 ### Modal
+
+
 
 <p>Open modal.</p>
 <pre><code>PluginWfBootstrapjs.modal({id: 'my_modal', label: 'My modal', url: '/some/url'});</code></pre>
@@ -64,11 +78,15 @@ data:
 
 #### id
 
+
+
 <pre><code>id: 'my_modal'</code></pre>
 
 <a name="key_2_0_1"></a>
 
 #### label
+
+
 
 <pre><code>label: 'My modal'</code></pre>
 
@@ -76,11 +94,15 @@ data:
 
 #### url
 
+
+
 <pre><code>url: '/some/url'</code></pre>
 
 <a name="key_2_0_3"></a>
 
 #### size
+
+
 
 <p>Values sm, lg, xl.</p>
 <pre><code>size: 'sm'</code></pre>
@@ -88,6 +110,8 @@ data:
 <a name="key_2_0_4"></a>
 
 #### fade
+
+
 
 <p>Set to false to avoid animation.
 Could be used if script in modal is supposed to close the modal.</p>
@@ -97,11 +121,15 @@ Could be used if script in modal is supposed to close the modal.</p>
 
 #### btn_reload
 
+
+
 <pre><code>btn_reload: true</code></pre>
 
 <a name="key_2_0_6"></a>
 
 #### btn_close
+
+
 
 <p>Optional.</p>
 <pre><code>btn_close: true</code></pre>
@@ -111,11 +139,15 @@ Could be used if script in modal is supposed to close the modal.</p>
 
 #### content
 
+
+
 <pre><code>content: 'Some content...'</code></pre>
 
 <a name="key_2_0_8"></a>
 
 #### Body
+
+
 
 <p>Add content to body element.</p>
 <pre><code>document.getElementById('my_modal_body').innerHTML='Add some content!';</code></pre>
@@ -124,12 +156,16 @@ Could be used if script in modal is supposed to close the modal.</p>
 
 #### Dom
 
+
+
 <p>Add content to body using PluginWfDom.</p>
 <pre><code>PluginWfDom.render([{type: 'div', innerHTML: [{type: 'strong', innerHTML: 'Date'}, {type: 'div', innerHTML: '2001-01-01'}]}], 'my_modal_body');</code></pre>
 
 <a name="key_2_0_10"></a>
 
 #### backdrop
+
+
 
 <p>Set backdrop to false (default true) to be able to close modal when click besides.</p>
 <pre><code>backdrop: true</code></pre>
@@ -138,12 +174,16 @@ Could be used if script in modal is supposed to close the modal.</p>
 
 #### body_bg
 
+
+
 <p>Set body background using Bootstrap bg-(name) (optional).</p>
 <pre><code>body_bg: 'light'</code></pre>
 
 <a name="key_2_0_12"></a>
 
 #### Jquery
+
+
 
 <p>Hide all modals.</p>
 <pre><code>$('.modal').modal('hide');</code></pre>
@@ -154,12 +194,16 @@ Could be used if script in modal is supposed to close the modal.</p>
 
 ### Alert
 
+
+
 <pre><code>PluginWfBootstrapjs.alert('My alert text...');</code></pre>
 <p>Original javascript alert method is replaced by this method on page load using widget_include.</p>
 
 <a name="key_2_2"></a>
 
 ### Confirm
+
+
 
 <pre><code>function delete(any_data){
   PluginWfBootstrapjs.confirm({content: 'My confirm text...', method: function(){delete_confirmed();}, data: any_data });
