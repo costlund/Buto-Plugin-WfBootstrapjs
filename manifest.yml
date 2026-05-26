@@ -1,5 +1,9 @@
-version: 1.18.4
+version: 1.18.5
 history:
+  1.18.5:
+    date: '2026-05-26'
+    title: Header background
+    description: 'Add param header_bg to give an background color.'
   1.18.4:
     date: '2025-05-23'
     title: Close button

@@ -124,6 +124,14 @@ readme:
                 backdrop: true
                 ```
             -
+              name: header_bg
+              date: '2026-05-26'
+              description: |
+                Set header background using Bootstrap bg-(name) (optional).
+                ```
+                header_bg: 'warning'
+                ```
+            -
               name: body_bg
               description: |
                 Set body background using Bootstrap bg-(name) (optional).

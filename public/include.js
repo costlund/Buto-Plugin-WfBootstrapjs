@@ -13,6 +13,16 @@ function plugin_wf_bootstrapjs(){
     }
     var modal_size = null;
     var modal_class = 'modal';
+    /**
+     * header_bg
+     */
+    var modal_header_bg = '';
+    if(data.header_bg){
+      modal_header_bg = 'bg-'+data.header_bg;
+    }
+    /**
+     * 
+     */
     if(data.fade){
       modal_class += ' fade';
     }
@@ -151,7 +161,7 @@ function plugin_wf_bootstrapjs(){
                 innerHTML: [
                   {
                     type: 'div', 
-                    attribute: {class: 'modal-header'},
+                    attribute: {class: 'modal-header '+modal_header_bg},
                     innerHTML: [
                       {type: 'h4', attribute: {class: 'modal-title', onclick: "console.clear();if(typeof PluginWfAjax == 'object'){PluginWfAjax.update('"+data.id+'_body'+"');}"}, innerHTML: [
                         {type: 'img', innerHTML: null, attribute: {src: '/plugin/icons/octicons/build/svg/'+data.icon+'.svg', style: 'width:20px;margin-top:-4px;margin-right:4px'}},
@@ -241,6 +251,7 @@ function plugin_wf_bootstrapjs(){
       footer_btn_close_text: 'Close',
       btn_reload: false,
       body_bg: ''
+      ,header_bg: ''
     };
     for (var key in data) {
       default_data[key] = data[key];

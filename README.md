@@ -172,6 +172,15 @@ Could be used if script in modal is supposed to close the modal.</p>
 
 <a name="key_2_0_11"></a>
 
+#### header_bg
+
+
+
+<p>Set header background using Bootstrap bg-(name) (optional).</p>
+<pre><code>header_bg: 'warning'</code></pre>
+
+<a name="key_2_0_12"></a>
+
 #### body_bg
 
 
@@ -179,7 +188,7 @@ Could be used if script in modal is supposed to close the modal.</p>
 <p>Set body background using Bootstrap bg-(name) (optional).</p>
 <pre><code>body_bg: 'light'</code></pre>
 
-<a name="key_2_0_12"></a>
+<a name="key_2_0_13"></a>
 
 #### Jquery
 
