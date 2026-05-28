@@ -375,7 +375,7 @@ function plugin_wf_bootstrapjs(){
     return null;
   }
   this.alert = function(content){
-    this.modal({content: content, label: '', backdrop: false, body_bg: 'light'});
+    this.modal({content: content, label: '', backdrop: false, body_bg: 'light', header_bg: 'secondary'});
   }
   this.i18n = {};
   this.confirm_data = {};
@@ -404,7 +404,7 @@ function plugin_wf_bootstrapjs(){
           }
         ]
       }];
-    this.modal({label: this.i18n.confirm, id: 'modal_wf_bootstrapjs_confirm'});
+    this.modal({label: this.i18n.confirm, id: 'modal_wf_bootstrapjs_confirm', header_bg: 'warning', body_bg: 'secondary'});
     PluginWfDom.render(content, document.getElementById('modal_wf_bootstrapjs_confirm_body'));
     document.getElementById('modal_wf_bootstrapjs_confirm_ok').addEventListener("click", this.confirm_ok);
     document.getElementById('modal_wf_bootstrapjs_confirm_cancel').addEventListener("click", this.confirm_cancel);

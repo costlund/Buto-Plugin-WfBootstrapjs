@@ -1,5 +1,9 @@
-version: 1.18.5
+version: 1.18.6
 history:
+  1.18.6:
+    date: '2026-05-28'
+    title: Alert, Confirm
+    description: 'Add header background to Alert, Confirm. Add body background to Conform.'
   1.18.5:
     date: '2026-05-26'
     title: Header background
